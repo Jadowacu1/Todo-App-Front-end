@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>TODO App</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><h1>TODO APP</h1></div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li>
+            <a href="" id="create">Create Task</a>
+          </li>
+          <li>
+            <a href="seached.html" id="searching"
+              ><i class="fas fa-search"></i
+            ></a>
+          </li>
+          <li id="display">
+            <a href="logout.html">LogOut</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="creatTask">
+      <form id="creatTask">
+        <div>
+          <input
+            type="text"
+            name=""
+            id="taskInput"
+            placeholder="Enter the Task"
+            required
+          />
+        </div>
+        <div><button type="submit" id="createTask">Create</button></div>
+      </form>
+    </div>
+    <div class="updateTask">
+      <form id="updateTask">
+        <div>
+          <input
+            type="text"
+            name=""
+            id="editInput"
+            placeholder="Enter the Task"
+            required
+          />
+        </div>
+        <div><button type="submit" id="edit">Edit</button></div>
+      </form>
+    </div>
+    <section>
+      <div>
+        <h2>TODO Task</h2>
+      </div>
+      <table id="allTask">
+        <tr>
+          <th class="task-column">Task</th>
+          <th class="action-column">Action</th>
+        </tr>
+      </table>
+    </section>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
